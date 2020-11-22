@@ -1,0 +1,40 @@
+﻿<Window x:Class="LogIn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogIn"
+        mc:Ignorable="d"
+        Title="Ventana principal" 
+        Height="400" Width="450"
+        WindowStartupLocation="CenterScreen"
+        Closing="VolverLogin">
+    
+    <Grid Margin="0,0,0,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Bienvenido," FontSize="40"/>
+            <Label x:Name="NombreLabel" FontSize="45"/>
+        </StackPanel>
+
+        <Button x:Name="ConsultarBoton" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF066BBD" BorderBrush="Black" Click="ConsultarBoton_Click">
+            <StackPanel Margin="10">
+                <Image/>
+                <Label Content="Consultar usuarios" Foreground="White" FontWeight="Bold"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="CerrarSesionBoton" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFC0000" BorderBrush="Black" Click="CerrarSesionBoton_Click">
+            <StackPanel Margin="10">
+                <Image/>
+                <Label Content="Cerrar sesión" Foreground="White" FontWeight="Bold"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

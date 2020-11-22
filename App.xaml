@@ -1,0 +1,10 @@
+﻿<Application x:Class="LogIn.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:LogIn"
+             DispatcherUnhandledException="Application_DispatcherUnhandledException"
+             StartupUri="UI/Login.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
